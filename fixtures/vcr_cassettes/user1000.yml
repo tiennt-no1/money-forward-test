@@ -1,0 +1,175 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1000
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:25 GMT
+      Connection:
+      - close
+      Content-Type:
+      - text/html
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - f0b6d2a7-f766-42c1-afe2-c6483887d562
+      X-Runtime:
+      - '0.002103'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:25 GMT
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1000/accounts
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:26 GMT
+      Connection:
+      - close
+      Content-Type:
+      - text/html
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - bf2a9211-b302-40d4-aaa4-1adcc631886f
+      X-Runtime:
+      - '0.002201'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:27 GMT
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1000/accounts
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:28 GMT
+      Connection:
+      - close
+      Content-Type:
+      - text/html
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 4ab4d5f3-9b47-43a6-8141-4f10060511e1
+      X-Runtime:
+      - '0.001596'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:28 GMT
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1000
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:29 GMT
+      Connection:
+      - close
+      Content-Type:
+      - text/html
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 935da705-0309-45d1-9260-f19b4397892e
+      X-Runtime:
+      - '0.002092'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:30 GMT
+recorded_with: VCR 5.0.0

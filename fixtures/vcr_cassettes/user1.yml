@@ -1,0 +1,498 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:00 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4652c7fcaa9767b4f2e9fe7fc1a28aa9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fb44c9e5-c3c3-4bff-b2f8-74d24dd10d82
+      X-Runtime:
+      - '0.001874'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"attributes":{"id":1,"name":"Alice","account_ids":[1,3,5]}}'
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:00 GMT
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1/accounts
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:01 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a6fd0f5a8d215c19f8dc98ac10806426"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - '0956e41b-d136-46fe-be4e-896fde5c5ef7'
+      X-Runtime:
+      - '0.003123'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"attributes":{"id":1,"user_id":1,"name":"A銀行","balance":20000}},{"attributes":{"id":3,"user_id":1,"name":"C信用金庫","balance":120000}},{"attributes":{"id":5,"user_id":1,"name":"E銀行","balance":5000}}]'
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:02 GMT
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1/accounts
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:03 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a6fd0f5a8d215c19f8dc98ac10806426"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d76db539-a30e-455d-a602-3393d3f2ef20
+      X-Runtime:
+      - '0.002607'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"attributes":{"id":1,"user_id":1,"name":"A銀行","balance":20000}},{"attributes":{"id":3,"user_id":1,"name":"C信用金庫","balance":120000}},{"attributes":{"id":5,"user_id":1,"name":"E銀行","balance":5000}}]'
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:04 GMT
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1/accounts
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:10 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a6fd0f5a8d215c19f8dc98ac10806426"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e3f9affe-c4e4-497d-a033-9196245106ad
+      X-Runtime:
+      - '0.003305'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"attributes":{"id":1,"user_id":1,"name":"A銀行","balance":20000}},{"attributes":{"id":3,"user_id":1,"name":"C信用金庫","balance":120000}},{"attributes":{"id":5,"user_id":1,"name":"E銀行","balance":5000}}]'
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:11 GMT
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1/accounts
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:12 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a6fd0f5a8d215c19f8dc98ac10806426"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4e6363aa-aff9-4c70-b060-09e0885b0ec5
+      X-Runtime:
+      - '0.002489'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"attributes":{"id":1,"user_id":1,"name":"A銀行","balance":20000}},{"attributes":{"id":3,"user_id":1,"name":"C信用金庫","balance":120000}},{"attributes":{"id":5,"user_id":1,"name":"E銀行","balance":5000}}]'
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:13 GMT
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:14 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4652c7fcaa9767b4f2e9fe7fc1a28aa9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f7de6b87-55b5-487e-8058-036f39a46ccb
+      X-Runtime:
+      - '0.001955'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"attributes":{"id":1,"name":"Alice","account_ids":[1,3,5]}}'
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:14 GMT
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1/accounts
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:16 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a6fd0f5a8d215c19f8dc98ac10806426"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4d9b6a75-2f01-4c03-8bdb-33413b8dd6d5
+      X-Runtime:
+      - '0.002740'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"attributes":{"id":1,"user_id":1,"name":"A銀行","balance":20000}},{"attributes":{"id":3,"user_id":1,"name":"C信用金庫","balance":120000}},{"attributes":{"id":5,"user_id":1,"name":"E銀行","balance":5000}}]'
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:17 GMT
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1/accounts
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:18 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a6fd0f5a8d215c19f8dc98ac10806426"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9d3c1112-9750-4d7a-80fa-55242e81de6d
+      X-Runtime:
+      - '0.002234'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"attributes":{"id":1,"user_id":1,"name":"A銀行","balance":20000}},{"attributes":{"id":3,"user_id":1,"name":"C信用金庫","balance":120000}},{"attributes":{"id":5,"user_id":1,"name":"E銀行","balance":5000}}]'
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:18 GMT
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:19 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4652c7fcaa9767b4f2e9fe7fc1a28aa9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d05750d4-0d67-46e7-b5b7-ad25c98351bf
+      X-Runtime:
+      - '0.002333'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"attributes":{"id":1,"name":"Alice","account_ids":[1,3,5]}}'
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:20 GMT
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1/accounts
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:21 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a6fd0f5a8d215c19f8dc98ac10806426"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 26ce80af-c6fa-410a-95ab-50292dcc4e41
+      X-Runtime:
+      - '0.001743'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"attributes":{"id":1,"user_id":1,"name":"A銀行","balance":20000}},{"attributes":{"id":3,"user_id":1,"name":"C信用金庫","balance":120000}},{"attributes":{"id":5,"user_id":1,"name":"E銀行","balance":5000}}]'
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:21 GMT
+- request:
+    method: get
+    uri: https://sample-accounts-api.herokuapp.com/users/1/accounts
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sample-accounts-api.herokuapp.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 20 Aug 2019 15:34:23 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a6fd0f5a8d215c19f8dc98ac10806426"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0a0217a5-0129-4407-b1f1-8a4f920e4171
+      X-Runtime:
+      - '0.001587'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"attributes":{"id":1,"user_id":1,"name":"A銀行","balance":20000}},{"attributes":{"id":3,"user_id":1,"name":"C信用金庫","balance":120000}},{"attributes":{"id":5,"user_id":1,"name":"E銀行","balance":5000}}]'
+    http_version: 
+  recorded_at: Tue, 20 Aug 2019 15:34:23 GMT
+recorded_with: VCR 5.0.0
