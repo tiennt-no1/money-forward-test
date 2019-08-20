@@ -5,4 +5,7 @@ class UsersController < ApplicationController
   def index
     render json: GetUserNameAndAccountsService.new(params).render_user_obj
   end
+
+  def dashboard
+  end
 end
