@@ -1,5 +1,5 @@
-class UsersController < ApplicationController
+# frozen_string_literal: true
 
-    def index
-    end
+class UsersController < ApplicationController
+  def index; end
 end
