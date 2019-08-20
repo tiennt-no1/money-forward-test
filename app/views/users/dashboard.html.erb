@@ -8,12 +8,12 @@
 
     <div class="form-group">
       <label>User name</label>
-      <input type="text" class="form-control" >
+      <input type="text" class="form-control" id="user_name">
     </div>
 
     <div class="form-group">
       <label>Balance</label>
-      <input type="text" class="form-control" >
+      <input type="text" class="form-control" id="total_balance" >
     </div>
 
     <button type="button" class="btn btn-primary" id="submit-btn">Submit</button>
@@ -24,13 +24,29 @@
   $('#submit-btn').on('click', function() {
     var user_id;
     user_id = $('#user_id').val()
-    console.log(user_id);
+    if (user_id === undefined || user_id === ''){
+      swal.fire({type: 'error', text: "enter user id first", timer: 2000})
+    }
     $.ajax({
       url: "/users/" + user_id,
       context: document.body
     }).done(function(data) {
-      console.log(data);
-      swal.fire(data);
+      $("#user_name").val(data["name"])
+      $("#total_balance").val(data["total_balance"])
+      console.log(data.accounts)
+      for (index in data.accounts){
+        account = data.accounts[index]
+        console.log(account.attributes.name)
+        console.log(account.attributes.balance)
+      }
+    }).fail(function(xhr, status, error){
+      try{
+        json_error = JSON.parse(xhr.responseText)
+        swal.fire({type: 'error', text: json_error.error, timer: 2000})
+
+      }catch(_){
+        swal.fire({type: 'error', text: "Unexpected Error", timer: 2000})
+      }
     });
   });
 </script>
