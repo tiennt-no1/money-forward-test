@@ -31,11 +31,14 @@ class GetUserNameAndAccountsService
     raise 'Error: user is not exist or API get user is error'
   end
 
-  def total_balance
-    take_user_accounts.inject(0) { |sum, account| sum + account['attributes']['balance'] }
+  def total_balance(user_accounts = nil)
+    user_accounts ||= take_user_accounts
+    user_accounts.inject(0) { |sum, account| sum + account['attributes']['balance'] }
   end
 
   def render_user_obj
-    { name: take_user_name, accounts: take_user_accounts, total_balance: total_balance }
+    threads = [Thread.new{take_user_name}, Thread.new{take_user_accounts} ]
+    user_name, accounts = threads.map(&:value)
+    { name: user_name, accounts: accounts, total_balance: total_balance(accounts)}
   end
 end
