@@ -16,11 +16,18 @@
       <input type="text" class="form-control" id="total_balance" >
     </div>
 
+    <div class="form-group">
+      <label>List accounts</label>
+      <ol id="account-list" >
+      </ol>
+    </div>
+
     <button type="button" class="btn btn-primary" id="submit-btn">Submit</button>
   </form>
 </div>
 
 <script>
+  
   $('#submit-btn').on('click', function() {
     var user_id;
     user_id = $('#user_id').val()
@@ -33,11 +40,10 @@
     }).done(function(data) {
       $("#user_name").val(data["name"])
       $("#total_balance").val(data["total_balance"])
-      console.log(data.accounts)
       for (index in data.accounts){
         account = data.accounts[index]
-        console.log(account.attributes.name)
-        console.log(account.attributes.balance)
+        $('#account-list').append(`<li >${account.attributes.name} - ${account.attributes.balance}</li>`)
+
       }
     }).fail(function(xhr, status, error){
       try{
