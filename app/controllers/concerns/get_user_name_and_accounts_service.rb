@@ -37,8 +37,8 @@ class GetUserNameAndAccountsService
   end
 
   def render_user_obj
-    threads = [Thread.new{take_user_name}, Thread.new{take_user_accounts} ]
+    threads = [Thread.new { take_user_name }, Thread.new { take_user_accounts }]
     user_name, accounts = threads.map(&:value)
-    { name: user_name, accounts: accounts, total_balance: total_balance(accounts)}
+    { name: user_name, accounts: accounts, total_balance: total_balance(accounts) }
   end
 end
