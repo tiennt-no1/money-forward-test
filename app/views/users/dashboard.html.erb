@@ -27,23 +27,25 @@
 </div>
 
 <script>
-  
+
   $('#submit-btn').on('click', function() {
     var user_id;
     user_id = $('#user_id').val()
     if (user_id === undefined || user_id === ''){
       swal.fire({type: 'error', text: "enter user id first", timer: 2000})
     }
+
+    swal.showLoading()
     $.ajax({
       url: "/users/" + user_id,
       context: document.body
     }).done(function(data) {
+      swal.close()
       $("#user_name").val(data["name"])
       $("#total_balance").val(data["total_balance"])
       for (index in data.accounts){
         account = data.accounts[index]
         $('#account-list').append(`<li >${account.attributes.name} - ${account.attributes.balance}</li>`)
-
       }
     }).fail(function(xhr, status, error){
       try{
